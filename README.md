@@ -7,6 +7,8 @@
 用户系统
 
 ## 前端 ./front/
+1. yarn
+2. yarn start
 `react` `antd`
 路由用HashRouter
 
