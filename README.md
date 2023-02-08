@@ -12,5 +12,5 @@
 `react` `antd`
 路由用HashRouter
 
-## 后端 ./server/
+## 后端 ./back/
 
