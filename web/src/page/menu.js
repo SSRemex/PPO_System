@@ -19,17 +19,20 @@ class SiderMean extends React.Component {
             {
                 key: 1,
                 label: () => {
-                    return <Button>首页</Button>
+                    return <Button href="/projectSource">项目上游</Button>
                 }
             },
             {
-                key: 2
+                key: 2,
+                label: () => {
+                    return <Button href="/projectProgress">项目进度</Button>
+                }
             },
             {
-                key: 3
-            },
-            {
-                key: 3
+                key: 3,
+                label: () => {
+                    return <Button href="/memberManager">成员管理</Button>
+                }
             }
         ],
     }
@@ -37,18 +40,15 @@ class SiderMean extends React.Component {
 
     render() {
         return (
-            <div>
             <Sider collapsible >
                 <div style={{ height: 32, margin: 16, background: 'rgba(255, 255, 255, 0.2)' }} />
                 <Menu
                     theme="dark"
                     style={{ width: 256 }}
-                    defaultOpenKeys={['sub1']}
                     mode="inline"
                     items={this.state.mean_item}
                 />
             </Sider>
-            </div>
         )
     }
 }
